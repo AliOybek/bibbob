@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root{
+    --a: 'arial';
+    --i: 'impact';
+}
+
+p,h1,h2,h3,h4,h5,h6,a,li,ul{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body{
+    font-family: var(--a);
+    min-width: 530px;
+}
+
+.title{
+    font-size: 36px;
+    color: #e27c28;
+    border-bottom: 2px solid #e27c28;
+    display: inline
+}
+
+.container{
+    max-width: 1140px;
+    width: 100%;
+    margin: auto;
+    padding: 0px 15px;
+}
+
+
+/* HEADER START */
+/* ***************************************************************************************************** */
+
+
+header .poster{
+    background: linear-gradient(to right, #4a0f98, #b16616);
+    padding: 26px 0px;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: center;
+}
+
+
+header .poster i{
+    font-size: 51px;
+    
+}
+header .poster p{
+    font-size: 18px;
+    margin-left: 23px;
+    width: 160px;
+}
+
+header .menu {
+    background: black;
+    
+}
+header .menu nav{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+  
+} 
+
+header .menu nav ul {
+    display: flex;
+}
+
+header .menu nav ul a{
+    color: white;
+    padding: 43px 22px 43px 9px;
+    font-size: 18px;
+    border-bottom: 3px solid transparent;
+    display: flex;
+    transition: 1s;
+}
+
+header .menu nav ul a:hover{
+    background: black;
+    color: #e27c28;
+    border-bottom: 3px solid #e27c28;
+    
+}
+
+header .text{
+    background: url(../img/header-fon.jpg) no-repeat center/cover;
+    padding-top: 187px;
+    padding-bottom: 170px;
+}
+
+header .text h1{
+    font-size: 60px;
+    color: white;
+    font-family: var(--i);
+}
+header .text p{
+    font-size: 18px;
+    color: white;
+    margin-top: 37px;
+    color: #fff;
+    font-size: 18px;
+    width: 100%;
+}
+
+header .text .btn {
+    display: flex;
+    max-width: 362px;
+    width: 100%;
+    margin-top: 81px;
+    justify-content: space-between;
+}
+
+header .text .btn a{
+    color: white;
+    background: black;
+    width: 164px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+header .text .btn a:hover{
+    background: white;
+    color:black;
+    
+}
+
+/* *************************************************************************************************** */
+/* FILMS START */
+
+.film{
+    background: #02153a;
+    padding-top: 69px;
+    padding-bottom: 74px;
+    
+}
+
+
+.film .film-block .box{
+    
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    border-radius: 10px;
+    
+}
+
+.film .film-block .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1);
+    transition: 0.5s;
+}
+.film .film-block .box:hover img{
+    transform: scale(1.5);
+}
+
+.film .film-block .box .box-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    background: #00000052;
+    padding: 16px;
+    
+} 
+
+.film .film-block .box .box-text i{
+    font-size: 41px;
+}
+
+.film .film-block .box .box-text h3{
+    font-size: 24px;
+    margin-top: 23px;
+    margin-bottom: 17px;
+}
+
+.film .film-block{
+    margin-top: 57px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+/* ********************************************************************************************************************************************** */
+/* FON-IMG */
+
+.fon-img{
+    background: url(../img/section-fon.jpg) no-repeat center/cover;
+    background-attachment: fixed;
+    padding-top: 58px;
+    padding-bottom: 61px;
+}
+
+.fon-img img{
+    max-width: 478px;
+    width: 100%;
+    
+}
+
+.fon-img p{
+   
+    color:white;
+    max-width: 539px;
+    width: 100%;
+    font-size: 18px;
+}
+
+.fon-img a{
+    display: flex;
+    color:black;
+    background: white;
+    border-bottom: 3px solid transparent;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 34px 15px 34px;
+    width: 164px;
+    height: 46px;
+    font-size: 18px;
+    transition: 1s;
+    margin-top: 50px;
+    border-radius: 8px;
+}
+
+.fon-img a:hover{
+    
+    color: white;
+    background: #000;
+}
+
+
+
+
+
+
+.collections{
+    padding: 70px 0px;
+    background: #02153a;
+}
+
+.collections .block{
+    margin-top: 47px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.collections .block .box{
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.collections .block .box .text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background: linear-gradient(to right, #4a109793, #b064189d);
+
+}
+
+    
